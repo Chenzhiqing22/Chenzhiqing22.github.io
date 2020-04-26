@@ -193,6 +193,27 @@
             </span>
 
           
+            <span id="/2020/04/24/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%B5%8F%E8%A7%88%E7%95%8C%E9%9D%A2/" class="post-meta-item leancloud_visitors" data-flag-title="手机端浏览界面" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/24/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%B5%8F%E8%A7%88%E7%95%8C%E9%9D%A2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/24/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%B5%8F%E8%A7%88%E7%95%8C%E9%9D%A2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -222,7 +243,10 @@
     <a href="/2020/04/24/%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5%E6%B7%BB%E5%8A%A0/" rel="prev" title="社交链接添加">
       <i class="fa fa-chevron-left"></i> 社交链接添加
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/26/%E8%BF%99%E4%B8%AA%E7%AE%97%E4%B8%8D%E7%AE%97%E6%97%A5%E5%BF%97%E5%91%A2%EF%BC%9F/" rel="next" title="这个算不算日志呢？">
+      这个算不算日志呢？ <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -235,6 +259,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -295,7 +320,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -334,9 +359,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">大橘哒</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
 
+<div class="theme-info">
+  <span class="post-count">共计315字</span>
+</div>
+
+<div class="theme-info">
+  <div class="some-thing"></div>
+  <span class="post-count">Σ(っ °Д °;)っ你居然翻到头了！</span>
+</div>
         
 
 
@@ -352,7 +383,7 @@
 
   
   
-  <script color='238,0,0' opacity='0.77' zIndex='0' count='130' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='238,0,0' opacity='0.77' zIndex='-1' count='130' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -391,5 +422,37 @@
 
   
 
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'SJYxq9XaWpmLKYNT76F1nuqO-gzGzoHsz',
+      appKey     : '48m7LxIAD8JFUpmdbXAqBTQq',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
 </body>
 </html>
+
+ <!--崩溃欺骗-->
+<script type="text/javascript" src="/source/js/crash_cheat.js"></script>
