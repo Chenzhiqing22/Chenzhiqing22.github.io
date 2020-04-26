@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #036e29;
+  background: #0181d2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1958,6 +1958,14 @@ pre .javascript .function {
 #qr p {
   text-align: center;
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #6cf;
+  text-decoration: underline;
+}
 .category-all-page .category-all-title {
   text-align: center;
 }
@@ -2192,7 +2200,7 @@ ul.breadcrumb li + li:last-child {
 }
 #底板透明度,
 .content-wrap {
-  background: rgba(255,255,255,0.55);
+  background: rgba(204,195,255,0.25);
   border-radius: initial;
   box-shadow: initial;
   box-sizing: border-box;
