@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff0400;
+  background: #4e4a9d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2345,7 +2345,7 @@ ul.breadcrumb li + li:last-child {
   border-bottom-color: #fc6423;
 }
 .sidebar {
-  background: var(--body-bg-color);
+  background: var(--content-bg-color);
   box-shadow: none;
   margin-top: 100%;
   position: static;
@@ -2360,7 +2360,7 @@ ul.breadcrumb li + li:last-child {
   display: none;
 }
 .sidebar-inner {
-  background: var(--content-bg-color);
+  background: rgba(102,204,255,0.35);
   border-radius: initial;
   box-shadow: initial;
   box-sizing: border-box;
@@ -2459,4 +2459,28 @@ body {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.content-wrap {
+  background: rgba(204,195,255,0.35);
+  border-radius: initial;
+  box-shadow: initial;
+  box-sizing: border-box;
+  padding: 40px;
+  width: calc(100% - 252px);
+}
+@media (max-width: 991px) {
+  .content-wrap {
+    border-radius: initial;
+    padding: 20px;
+    width: 100%;
+  }
+}
+.sidebar {
+  background: rgba(255,255,255,0.5);
+}
+.header-inner {
+  background: rgba(255,255,255,0.65);
+}
+.popup {
+  background: rgba(255,255,255,0.65);
 }
